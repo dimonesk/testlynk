@@ -14,9 +14,7 @@ function _scripts_and_styles() {
 
 
 	wp_register_style( 'style', get_template_directory_uri() .'/inc/assets/css/style.min.css', array(), '310119' );
-	//wp_register_style( 'select2', get_template_directory_uri() .'/inc/css/select2.min.css', array(), '310119' );
 	wp_enqueue_style( 'style' );
-	//wp_enqueue_style( 'style' );
 
 	if (!is_admin()){
 		remove_action( 'wp_head',             'print_emoji_detection_script',     7    );
