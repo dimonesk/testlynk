@@ -1,0 +1,37 @@
+$includePath: "/wp-content/themes/test-dizzain/inc/blocks";
+
+.header{
+  height: 731px;
+  background-image: url('#{$includePath}/site-header/phone-in-hand.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  &__logo{
+    display: inline-block;
+    padding-top: 25px;
+  }
+  &__text-block{
+    max-width: 880px;
+    color:#fff;
+    padding-top: 90px;
+  }
+  &__main-text{
+    font-size: 55px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+  }
+  &__sub-text{
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: 1.5dppx),
+  only screen and (min-resolution: 144dpi) {
+    background-image: url('#{$includePath}/site-header/phone-in-hand@2x.png');
+  }
+
+  @import "site-header-responsive";
+}

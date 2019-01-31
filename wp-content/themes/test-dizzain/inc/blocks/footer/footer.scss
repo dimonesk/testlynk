@@ -1,0 +1,48 @@
+$includePath: "/wp-content/themes/test-dizzain/inc/blocks";
+
+.footer{
+  background-image: url('#{$includePath}/footer/footer.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color:white;
+
+  &__text-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 585px;
+    text-align: center;
+  }
+
+  &__main-text{
+    font-size: 50px;
+    font-weight: 700;
+    max-width: 880px;
+    margin: 0 auto 60px;
+  }
+
+  &__copyright{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 25px 0;
+    color: rgba(255, 255, 255, 0.8);
+    a{
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: 1.5dppx),
+  only screen and (min-resolution: 144dpi){
+    background-image: url('#{$includePath}/footer/footer@2x.png');
+  }
+
+  @import "footer-responsive";
+
+}

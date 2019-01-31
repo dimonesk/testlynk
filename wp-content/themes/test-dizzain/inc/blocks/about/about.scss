@@ -1,0 +1,92 @@
+$includePath: "/wp-content/themes/test-dizzain/inc/blocks";
+
+.about {
+  margin-top: 105px;
+
+  .about-list {
+    display: flex;
+    justify-content: space-between;
+    &__item {
+      width: 360px;
+      text-align: center;
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+          .about-list__img {
+            background-image: url('#{$includePath}/about/about#{$i}.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+          only screen and (min--moz-device-pixel-ratio: 1.5),
+          only screen and (-o-min-device-pixel-ratio: 3/2),
+          only screen and (min-resolution: 1.5dppx),
+          only screen and (min-resolution: 144dpi) {
+            .about-list__img {
+              background-image: url('#{$includePath}/about/about#{$i}@2x.png');
+            }
+          }
+        }
+      }
+    }
+
+    &__img {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 40px;
+    }
+
+    &__item_color_ocean {
+      color: #08bab1;
+    }
+
+    &__item_color_green {
+      color: #109836;
+    }
+
+    &__item_color_blue {
+      color: #225fd1;
+    }
+
+    &__desc {
+      padding: 15px 20px;
+      border: 3px solid;
+      border-radius: 5px;
+      height: 200px;
+      line-height: 1.5;
+      position: relative;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        margin-left: -10px;
+        width: 20px;
+        height: 20px;
+        border-width: 3px 0 0 3px;
+        border-style: solid;
+        background-color: white;
+        transform: rotate(45deg);
+      }
+    }
+
+    &__desc_small_padding {
+      padding: 15px 30px;
+    }
+
+    &__title {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    &__text {
+      color: #424242;
+      font-weight: 300;
+      font-size: 18px;
+    }
+
+  }
+
+  @import "about-responsive";
+}

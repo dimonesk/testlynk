@@ -1,0 +1,25 @@
+@media all and (max-width: 992px) {
+  padding: 0 10px;
+  &__text-block{
+    height: 420px;
+  }
+  &__main-text{
+    max-width: 100%;
+    font-size: 42px;
+  }
+  &__copyright{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+  }
+  &__copyright-text{
+    margin-bottom: 15px;
+  }
+}
+
+@media all and (max-width: 445px) {
+  &__main-text{
+    font-size: 33px;
+  }
+}

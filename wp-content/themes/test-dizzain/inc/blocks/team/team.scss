@@ -1,0 +1,61 @@
+$includePath: "/wp-content/themes/test-dizzain/inc/blocks";
+
+.team {
+  margin: 105px 0 130px;
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    width: 360px;
+    text-align: center;
+
+  }
+
+  &__item_member {
+    .team-list__img {
+      background-image: url('#{$includePath}/team/bg-team-radja.png');
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+      only screen and (min--moz-device-pixel-ratio: 1.5),
+      only screen and (-o-min-device-pixel-ratio: 3/2),
+      only screen and (min-resolution: 1.5dppx),
+      only screen and (min-resolution: 144dpi) {
+        background-image: url('#{$includePath}/team/bg-team-radja@2x.png');
+      }
+    }
+  }
+
+  &__img {
+    width: 225px;
+    height: 225px;
+    margin: 0 auto 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('#{$includePath}/team/bg-team.png');
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: 1.5dppx),
+    only screen and (min-resolution: 144dpi) {
+      background-image: url('#{$includePath}/team/bg-team@2x.png');
+    }
+  }
+
+  &__title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__text{
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+
+}
+  @import "team-responsive";
+}
