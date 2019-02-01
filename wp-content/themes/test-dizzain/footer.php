@@ -13,7 +13,7 @@
                 All right reserved / Olynk / 2018
             </div>
             <div class="footer__copyright-text">
-                Website and Mobile App Development - <a target="_blank" rel="nofollow noopener" href="dizzain.com">Dizzain.com</a>
+                Website and Mobile App Development - <a target="_blank" rel="nofollow noopener" href="https://dizzain.com">Dizzain.com</a>
             </div>
         </div>
     </div>
